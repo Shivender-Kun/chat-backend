@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const http = require("http");
+// const http = require("http");
 // const cors = require("cors");
-const server = http.createServer(app);
+// const server = http.createServer(app);
 // const socketio = require("socket.io");
 // const io = socketio(server);
 
@@ -27,6 +27,6 @@ app.get("/", (req, res) => {
 //   });
 // });
 
-server.listen(process.env.Port || 4000, () => {
+app.listen(process.env.Port || 4000, () => {
   console.log(`listening on ${process.env.Port}`);
 });
